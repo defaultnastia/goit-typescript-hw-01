@@ -1,9 +1,15 @@
+type PageDetails = {
+  createAt?: Date;
+  updateAt?: Date;
+  // [prop: string]: unknown;
+};
+
 type Page = {
   title: string;
   likes: number;
   accounts: string[];
   status: "open" | "close";
-  details?: {};
+  details?: PageDetails;
 };
 
 const page1: Page = {
